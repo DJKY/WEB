@@ -3,23 +3,72 @@
   <head>
     <title>WEB1 - html</title>
     <meta charset="utf-8">
+    <style>
+     .saw {
+       color:gray;
+     }
+     body{
+       margin:0px;
+     }
+     a {
+       color:black;
+       text-decoration:none;
+
+     }
+     h1 {
+       border-bottom:1px solid gray;
+       font-size : 45px;
+       text-align : center;
+       margin:0px;
+       padding:20px;
+     }
+     #grid{
+       display: grid;
+       grid-template-columns:150px 1fr;
+     }
+     #grid ol{
+       border-right:1px solid gray;
+       width:100px;
+       margin:0px;
+       padding:20px;
+     }
+     @media(max-width:800px)
+     {
+       #grid{
+         display: block;
+       }
+       #grid ol{
+         border-right:none;
+       }
+       h1{
+         border-bottom:none;
+       }
+     }
+     </style>
   </head>
   <body>
-    <h1><a href="index.html"WEB</h1>
+    <h1><a href="index.html"class="saw">WEB</a></h1>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html" class="saw">html</a></li>
+      <li><a href="2.html" class="saw">css</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+    </ol>
+    <!--
+    <h1><a href="index.html">WEB</h1>
     <ol>
       <li><a href="1.html">html</a></li>
       <li><a href="2.html">css</a></li>
       <li><a href="3.html">JavaScript</a></li>
-    </ol>
+    </ol>-->
+  <div>
     <h2>CSS이란 무엇인가?</h2>
     <p><a href="https://www.w3.org/TR/html5/" targer="_blank" title="html5 specification">
     <img src="coding.jpg" width="100%"></img></p><p
-    style="margin-top:40px;">Cascading Style Sheets (CSS)는 HTML이나 XML(SVG나 XHTML 같은 XML 방언(dialect) 포함)로 작성된 문서의 표현을 기술하기 위해 쓰이는 스타일시트 언어입니다. CSS는 요소가 화면, 종이, 스피치나 다른 매체 상에 어떻게 렌더링되어야 하는 지를 기술합니다.
+    style="margin-top:0px;">Cascading Style Sheets (CSS)는 HTML이나 XML(SVG나 XHTML 같은 XML 방언(dialect) 포함)로 작성된 문서의 표현을 기술하기 위해 쓰이는 스타일시트 언어입니다. CSS는 요소가 화면, 종이, 스피치나 다른 매체 상에 어떻게 렌더링되어야 하는 지를 기술합니다.
     CSS는 오픈 웹의 핵심 언어 중 하나이고 표준화된 W3C 스펙이 있습니다. 레벨로 개발된, CSS1은 이제 안 쓰고, CSS2.1은 권고안(recommendation)이며 이제 더 작은 모듈로 나뉜 CSS3은 표준화 과정이 진행 중입니다.
-    <br>
-  </br>
-    <parent>
-      <child></child>
-    </parent>
+  </p>
+  </div>
+</div>
   </body>
 </html>
